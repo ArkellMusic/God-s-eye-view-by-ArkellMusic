@@ -53,3 +53,15 @@ test('classifies DGT sources separately from city packs and applies group visibi
   assert.equal(isCctvCameraGroupVisible(dgt, new Set(['toledo'])), false);
   assert.equal(isCctvCameraGroupVisible(dgt, null), true);
 });
+
+test('feed-kind preset hides cameras of the other kind inside visible groups', () => {
+  const still = { city: 'Madrid', cityId: 'madrid', feedType: 'image' };
+  const video = { city: 'Madrid', cityId: 'madrid', feedType: 'hls' };
+  const all = new Set(['madrid']);
+  assert.equal(isCctvCameraGroupVisible(still, all, 'snapshot'), true);
+  assert.equal(isCctvCameraGroupVisible(video, all, 'snapshot'), false);
+  assert.equal(isCctvCameraGroupVisible(video, all, 'm3u8'), true);
+  assert.equal(isCctvCameraGroupVisible(still, all, 'm3u8'), false);
+  assert.equal(isCctvCameraGroupVisible(still, null, null), true);
+  assert.equal(isCctvCameraGroupVisible(video, new Set(['toledo']), 'm3u8'), false);
+});

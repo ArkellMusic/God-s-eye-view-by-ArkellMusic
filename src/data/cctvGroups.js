@@ -157,7 +157,12 @@ export function mergeCctvGroupIndex(loadedGroups = [], index = [], loading = new
   });
 }
 
-export function isCctvCameraGroupVisible(camera, visibleGroupIds) {
+export function isCctvCameraGroupVisible(camera, visibleGroupIds, feedKind = null) {
+  if (
+    (feedKind === 'snapshot' || feedKind === 'm3u8') &&
+    cctvCameraFeedKind(camera) !== feedKind
+  )
+    return false;
   return (
     !(visibleGroupIds instanceof Set) ||
     visibleGroupIds.has(cctvCameraGroup(camera).id)
