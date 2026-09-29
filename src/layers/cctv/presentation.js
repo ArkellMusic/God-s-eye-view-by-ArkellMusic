@@ -194,6 +194,7 @@ export function createPresentation({
         layerState._geoGroupIndex,
         layerState._loadingGeoGroups,
       ),
+      visibleFeedKind: layerState._visibleFeedKind || null,
       // Explicit list (never null): groups not loaded yet are OFF.
       visibleCameraGroupIds: layerState._visibleCctvGroupIds
         ? [...layerState._visibleCctvGroupIds]

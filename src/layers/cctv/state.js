@@ -28,6 +28,7 @@ export function createState({ services }) {
   layerState._enabled = false;
 
   layerState._visibleCctvGroupIds = null;
+  layerState._visibleFeedKind = null;
   layerState._geoGroupIndex = [];
   layerState._loadedGeoGroups = new Set();
   layerState._loadingGeoGroups = new Set();

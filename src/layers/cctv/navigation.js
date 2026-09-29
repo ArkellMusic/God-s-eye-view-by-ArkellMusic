@@ -25,6 +25,7 @@ export function createNavigation({
         !isCctvCameraGroupVisible(
           record.camera,
           layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
         )
       )
         continue;
@@ -102,7 +103,8 @@ export function createNavigation({
 
   function maybeAutoHop(nowMs) {
     const visibleRecords = layerState._records.filter((record) =>
-      isCctvCameraGroupVisible(record.camera, layerState._visibleCctvGroupIds),
+      isCctvCameraGroupVisible(record.camera, layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind),
     );
     if (
       !layerState._autoHop ||

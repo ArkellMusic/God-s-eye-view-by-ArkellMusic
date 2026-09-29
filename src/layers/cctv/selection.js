@@ -67,7 +67,8 @@ export function createSelection({
       return CCTV_ACTIVATION_RESULT.NOT_FOUND;
     const record = layerState._recordById.get(cameraId);
     if (
-      !isCctvCameraGroupVisible(record.camera, layerState._visibleCctvGroupIds)
+      !isCctvCameraGroupVisible(record.camera, layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind)
     )
       return CCTV_ACTIVATION_RESULT.NOT_FOUND;
     const previousActiveRecord = getActiveRecord();

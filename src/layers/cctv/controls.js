@@ -42,7 +42,7 @@ export function createControls({ state: layerState, services, parts, source }) {
      * @param {boolean} [params.focusSelected] - Fly to the active camera.
      * @param {number} [params.focusDurationSec] - Fly-to duration.
      */
-    setVisibleCameraGroups(groupIds = []) {
+    setVisibleCameraGroups(groupIds = [], options = {}) {
       const groups = buildCctvCameraGroups(
         layerState._records.map((record) => record.camera),
       );
@@ -53,12 +53,20 @@ export function createControls({ state: layerState, services, parts, source }) {
       );
       layerState._visibleCctvGroupIds =
         requested.size === groups.length ? null : requested;
+      // undefined = keep the current feed-kind preset; null/'snapshot'/'m3u8' set it.
+      if (options && options.feedKind !== undefined) {
+        layerState._visibleFeedKind =
+          options.feedKind === 'snapshot' || options.feedKind === 'm3u8'
+            ? options.feedKind
+            : null;
+      }
       const active = parts.selection.getActiveRecord();
       if (
         active &&
         !isCctvCameraGroupVisible(
           active.camera,
           layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
         )
       ) {
         parts.selection.deactivateActiveCamera();
@@ -68,6 +76,7 @@ export function createControls({ state: layerState, services, parts, source }) {
           isCctvCameraGroupVisible(
             record.camera,
             layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
           )
         )
           continue;
@@ -267,7 +276,8 @@ export function createControls({ state: layerState, services, parts, source }) {
       const objects = [];
       for (let i = start; i < layerState._records.length; i += stride) {
         const camera = layerState._records[i].camera;
-        if (!isCctvCameraGroupVisible(camera, layerState._visibleCctvGroupIds))
+        if (!isCctvCameraGroupVisible(camera, layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind))
           continue;
         objects.push({
           position: layerState._records[i].position,
@@ -376,6 +386,7 @@ export function createControls({ state: layerState, services, parts, source }) {
         isCctvCameraGroupVisible(
           record.camera,
           layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
         ),
       );
       if (!visibleRecords.length) return null;

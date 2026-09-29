@@ -108,6 +108,7 @@ export function createCards({ state: layerState, services, parts, source }) {
         !isCctvCameraGroupVisible(
           record.camera,
           layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
         )
       )
         continue;
@@ -237,6 +238,7 @@ export function createCards({ state: layerState, services, parts, source }) {
         !isCctvCameraGroupVisible(
           record.camera,
           layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
         )
       )
         return;

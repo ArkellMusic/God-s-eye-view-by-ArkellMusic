@@ -151,6 +151,7 @@ export function createRendering({
         isCctvCameraGroupVisible(
           record.camera,
           layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
         ) && occluder.isPointVisible(bb.position);
       if (bb.show !== visible) bb.show = visible;
     }
@@ -214,6 +215,7 @@ export function createRendering({
       const groupVisible = isCctvCameraGroupVisible(
         record.camera,
         layerState._visibleCctvGroupIds,
+ layerState._visibleFeedKind,
       );
       const isActive = record.camera.id === activeId;
       if (record.billboard) {
