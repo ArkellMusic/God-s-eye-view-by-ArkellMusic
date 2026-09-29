@@ -1,26 +1,3 @@
-import {
-  buildCctvCameraGroups,
-  cctvCameraGroup,
-  cctvCameraFeedKind,
-} from '../data/cctvGroups.js';
-
-/**
- * Group ids that contain at least one camera of the given feed kind
- * ('snapshot' or 'm3u8'), used by the FILTER CAMERAS popup's quick-filter
- * buttons. A group only ever mixes feed kinds in rare edge cases, so
- * "contains at least one" is the right rule for a quick preset — the
- * per-group ON/OFF toggle stays available for anyone who needs finer control.
- */
-function cctvGroupIdsForFeedKind(cameras, kind) {
-  const matching = new Set();
-  for (const camera of cameras) {
-    if (cctvCameraFeedKind(camera) === kind) {
-      matching.add(cctvCameraGroup(camera).id);
-    }
-  }
-  return matching;
-}
-
 export function _initCctvPanel() {
   if (!this._cctvPanel) return;
 
@@ -73,36 +50,18 @@ export function _initCctvPanel() {
     this.cctv.setVisibleCameraGroups?.([...visible]);
   });
 
-  this.listen(this._cctvFilterAllOnBtn, 'click', () => {
-    const groups = this._cctvState?.cameraGroups || [];
-    this.cctv.setVisibleCameraGroups?.(groups.map((group) => group.id));
-  });
-
-  this.listen(this._cctvFilterAllOffBtn, 'click', () => {
-    this.cctv.setVisibleCameraGroups?.([]);
-  });
-
-  // Quick presets: show only still-image cameras, or only live-video
-  // (.m3u8/HLS, including YouTube-embedded live) cameras. These act on the
-  // same group visibility as the per-row ON/OFF toggles above, so a group
-  // with any camera of the chosen kind switches on and the rest switch off.
-  this.listen(this._cctvFilterSnapshotBtn, 'click', () => {
-    const cameras = this._cctvState?.cameras || [];
-    const groups = this._cctvState?.cameraGroups || buildCctvCameraGroups(cameras);
-    const matchingIds = cctvGroupIdsForFeedKind(cameras, 'snapshot');
-    this.cctv.setVisibleCameraGroups?.(
-      groups.filter((group) => matchingIds.has(group.id)).map((group) => group.id),
-    );
-  });
-
-  this.listen(this._cctvFilterM3u8Btn, 'click', () => {
-    const cameras = this._cctvState?.cameras || [];
-    const groups = this._cctvState?.cameraGroups || buildCctvCameraGroups(cameras);
-    const matchingIds = cctvGroupIdsForFeedKind(cameras, 'm3u8');
-    this.cctv.setVisibleCameraGroups?.(
-      groups.filter((group) => matchingIds.has(group.id)).map((group) => group.id),
-    );
-  });
+  // Quick presets. They work on EVERY camera group, including the ones that
+  // still live on the server (geojson pack): those are loaded first, smallest
+  // groups first so as many as possible fit under the globe's camera limit.
+  //   all      -> every group ON, no feed-kind filter
+  //   none     -> every group OFF
+  //   snapshot -> only still-image cameras, in every group that has any
+  //   m3u8     -> only live-video cameras, in every group that has any
+  const runPreset = (mode) => () => this._applyCctvFilterPreset(mode);
+  this.listen(this._cctvFilterAllOnBtn, 'click', runPreset('all'));
+  this.listen(this._cctvFilterAllOffBtn, 'click', runPreset('none'));
+  this.listen(this._cctvFilterSnapshotBtn, 'click', runPreset('snapshot'));
+  this.listen(this._cctvFilterM3u8Btn, 'click', runPreset('m3u8'));
 
   // Search box only hides/shows rows already in the DOM; it never touches
   // on/off state, so filtering the list never changes what's visible.
@@ -290,4 +249,61 @@ export function _initCctvPanel() {
 
   this._renderCctvState(null);
   this.actions.syncViewport();
+}
+
+/**
+ * Applies one of the FILTER CAMERAS quick presets to the whole catalog.
+ * @param {'all'|'none'|'snapshot'|'m3u8'} mode
+ */
+export async function _applyCctvFilterPreset(mode) {
+  if (this.destroyed || this._cctvPresetBusy) return;
+  const feedKind = mode === 'snapshot' || mode === 'm3u8' ? mode : null;
+  if (mode === 'none') {
+    this.cctv.setVisibleCameraGroups?.([], { feedKind: null });
+    return;
+  }
+  const wants = (group) =>
+    mode === 'all' ||
+    Number(group[mode === 'snapshot' ? 'snapshot' : 'm3u8'] || 0) > 0;
+  const groups = (this._cctvState?.cameraGroups || []).filter(wants);
+  const pending = groups
+    .filter((group) => group.unloaded)
+    .sort((a, b) => (a.total || 0) - (b.total || 0));
+
+  this._cctvPresetBusy = true;
+  this._cctvFilterModal?.classList.add('is-busy');
+  let hitLimit = false;
+  let failed = 0;
+  try {
+    // Show what is already loaded right away, then stream the rest in.
+    const loadedIds = groups.filter((g) => !g.unloaded).map((g) => g.id);
+    this.cctv.setVisibleCameraGroups?.(loadedIds, { feedKind });
+    for (let i = 0; i < pending.length; i += 1) {
+      if (this.destroyed) return;
+      const group = pending[i];
+      if (pending.length > 1) {
+        this.actions.showToast?.(
+          `Cargando cámaras… ${i + 1}/${pending.length} (${group.name})`,
+        );
+      }
+      const result = await this.cctv.loadCameraGroup?.(group.id);
+      if (result?.ok || result?.reason === 'already-loaded') continue;
+      if (result?.reason === 'limit') hitLimit = true;
+      else if (result?.reason !== 'empty') failed += 1;
+    }
+    // Loaded groups are now real records: switch on everything that fits.
+    const fresh = this._cctvState?.cameraGroups || [];
+    const ids = fresh.filter((g) => !g.unloaded && wants(g)).map((g) => g.id);
+    this.cctv.setVisibleCameraGroups?.(ids, { feedKind });
+    if (hitLimit) {
+      this.actions.showToast?.(
+        'Límite de cámaras en el globo alcanzado: algunos grupos grandes no se han cargado',
+      );
+    } else if (failed) {
+      this.actions.showToast?.(`${failed} grupo(s) no se pudieron cargar`);
+    }
+  } finally {
+    this._cctvPresetBusy = false;
+    this._cctvFilterModal?.classList.remove('is-busy');
+  }
 }

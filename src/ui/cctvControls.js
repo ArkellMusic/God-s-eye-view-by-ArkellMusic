@@ -16,7 +16,7 @@ import {
   _typeCctvSummary,
   _updateCctvSyncChip,
 } from './cctvPresentation.js';
-import { _initCctvPanel } from './cctvBindings.js';
+import { _initCctvPanel, _applyCctvFilterPreset } from './cctvBindings.js';
 import {
   _cctvVideoModalEligible,
   _openCctvVideoModal,
@@ -52,6 +52,7 @@ export class CctvControls {
     this._cctvVideoModalCameraId = null;
     this._cctvYoutubeLargeCameraId = null;
     this._cctvFilterModalOpen = false;
+    this._cctvPresetBusy = false;
     this._initCctvPanel();
     if (this._cctvVideo && typeof MutationObserver !== 'undefined') {
       this._videoVisibilityObserver = new MutationObserver(() =>
@@ -123,6 +124,9 @@ export class CctvControls {
   }
   _initCctvPanel(...args) {
     return _initCctvPanel.call(this, ...args);
+  }
+  _applyCctvFilterPreset(...args) {
+    return _applyCctvFilterPreset.call(this, ...args);
   }
   _cctvVideoModalEligible(...args) {
     return _cctvVideoModalEligible.call(this, ...args);

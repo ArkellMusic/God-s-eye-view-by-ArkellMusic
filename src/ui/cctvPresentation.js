@@ -1,5 +1,6 @@
 import {
   buildCctvCameraGroups,
+  cctvCameraFeedKind,
   cctvCameraGroup,
   cctvGroupLabel,
 } from '../data/cctvGroups.js';
@@ -35,9 +36,23 @@ export function _renderCctvState(state) {
   const visibleGroupIds = new Set(
     state?.visibleCameraGroupIds || groups.map((group) => group.id),
   );
-  const visibleCameras = cameras.filter((camera) =>
-    visibleGroupIds.has(cctvCameraGroup(camera).id),
+  const feedKind = state?.visibleFeedKind || null;
+  const visibleCameras = cameras.filter(
+    (camera) =>
+      visibleGroupIds.has(cctvCameraGroup(camera).id) &&
+      (!feedKind || cctvCameraFeedKind(camera) === feedKind),
   );
+  // Highlight the active quick preset (ALL ON = every group on, no feed filter).
+  const allGroupsOn =
+    groups.length > 0 && groups.every((group) => visibleGroupIds.has(group.id));
+  const setActive = (btn, on) => {
+    btn?.classList.toggle('is-active', Boolean(on));
+    btn?.setAttribute('aria-pressed', String(Boolean(on)));
+  };
+  setActive(this._cctvFilterAllOnBtn, allGroupsOn && !feedKind);
+  setActive(this._cctvFilterAllOffBtn, visibleGroupIds.size === 0);
+  setActive(this._cctvFilterSnapshotBtn, feedKind === 'snapshot');
+  setActive(this._cctvFilterM3u8Btn, feedKind === 'm3u8');
   if (this._cctvFilterBtn) {
     const visibleCount = groups.reduce(
       (count, group) => count + Number(visibleGroupIds.has(group.id)),
@@ -53,6 +68,8 @@ export function _renderCctvState(state) {
     // 1500+ rows: only rebuild the list when something in it changed.
     const listSignature =
       searchQuery +
+      '|' +
+      (feedKind || '') +
       '|' +
       groups
         .map(
