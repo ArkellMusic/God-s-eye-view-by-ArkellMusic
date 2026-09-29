@@ -1,0 +1,185 @@
+/* ── Pantallas compactas: móvil vertical y móvil en horizontal ───────────
+   Se carga después de mobile.css.
+   "Compacto" = ancho ≤ 720px (móvil vertical) o táctil con alto ≤ 520px
+   (móvil en horizontal, p. ej. 844×390, que NO entraba en ninguna regla
+   de móvil porque su ancho supera 720px).
+   Objetivos: quitar lo decorativo que tapa los controles (HUD de texto,
+   subtítulo, medidores), encoger título/botones y dejar el dock inferior
+   como una fila de tres controles que no se pisan. */
+
+/* Estado de los botones rápidos del popup FILTER CAMERAS (todas las pantallas). */
+.cctv-filter-modal .scene-btn.is-active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(0, 212, 255, 0.14);
+}
+
+.cctv-filter-modal.is-busy .cctv-filter-modal-toolbar-actions .scene-btn {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cctv-filter-modal.is-busy .cctv-filter-modal-panel {
+  cursor: progress;
+}
+
+@media (max-width: 720px), (pointer: coarse) and (max-height: 520px) {
+  /* 1) Fuera el HUD decorativo (REC, ORB, GSD, coordenadas, texto vertical
+        de los bordes, punto rojo): en pantalla pequeña solo estorba. */
+  #intel-hud,
+  #hud-rec-dot,
+  .hud-left-edge,
+  .hud-right-edge {
+    display: none !important;
+  }
+
+  /* 2) Título y acciones globales más pequeños y sin solaparse. */
+  #title-bar {
+    top: 14px;
+    left: 10px;
+  }
+
+  #title-bar .title-glow,
+  #title-bar .subtitle,
+  #title-bar .frame-rate-readout,
+  #style-indicator {
+    display: none !important;
+  }
+
+  #title-bar h1 {
+    font-size: 13px;
+    letter-spacing: 3px;
+    gap: 8px;
+  }
+
+  #title-bar .title-logo {
+    width: 28px;
+  }
+
+  #top-center-actions {
+    top: max(8px, env(safe-area-inset-top));
+    right: max(8px, env(safe-area-inset-right));
+    left: auto;
+    transform: none;
+    gap: 6px;
+  }
+
+  #top-center-actions button {
+    width: 34px;
+    height: 34px;
+    min-height: 34px;
+  }
+
+  /* 3) Dock inferior: el control de voz pasa a ser solo el micrófono para
+        no montarse sobre LOCATION y VISUAL PRESETS. */
+  #command-dock {
+    --dock-voice-width: 3.6rem;
+    bottom: max(6px, env(safe-area-inset-bottom));
+  }
+
+  #command-dock > #gev-voice-control {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: var(--dock-voice-width);
+    flex-basis: var(--dock-voice-width);
+    height: 3.6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.2rem;
+  }
+
+  #command-dock .gev-voice-heading,
+  #command-dock .gev-voice-readout,
+  #command-dock .gev-voice-visualizer,
+  #command-dock .gev-mic-label {
+    display: none;
+  }
+
+  #command-dock #gev-voice-button {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  #command-dock .panel-inner,
+  #command-dock .location-inner {
+    padding: 6px 8px;
+  }
+
+  /* 4) Créditos de mapa: obligatorios, pero pequeños y pegados abajo. */
+  #cesium-credits {
+    font-size: 9px;
+    line-height: 1.2;
+    max-width: 60vw;
+  }
+
+  #cesium-credits img,
+  #cesium-credits .cesium-credit-logoContainer img {
+    max-height: 14px;
+    width: auto;
+  }
+
+  /* 5) Popup FILTER CAMERAS: ocupa casi toda la pantalla y se lee bien. */
+  .cctv-filter-modal-panel {
+    width: 98vw;
+    height: min(96dvh, 96vh);
+  }
+
+  .cctv-filter-modal-header {
+    padding: 8px 12px;
+  }
+
+  .cctv-filter-modal-toolbar {
+    padding: 6px 12px;
+    gap: 6px;
+  }
+
+  .cctv-filter-modal-toolbar-actions .scene-btn {
+    flex: 1 1 calc(50% - 6px);
+    min-height: 36px;
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .cctv-filter-toolbar-divider {
+    display: none;
+  }
+
+  .cctv-group-list {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .cctv-group-row {
+    min-height: 36px;
+    padding: 6px 10px;
+  }
+}
+
+/* Solo móvil en horizontal: columnas laterales cortas y pegadas a los bordes. */
+@media (pointer: coarse) and (max-height: 520px) and (min-width: 721px) {
+  :root {
+    --left-stack-x: 8px;
+    --right-rail-x: 8px;
+    --left-stack-top: 56px;
+    --left-stack-gap: 48px;
+    --left-collapsed-width: 132px;
+  }
+
+  #left-panel-stack .panel-title,
+  #right-context-rail .panel-title {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  #left-panel-stack .panel-inner,
+  #right-context-rail .panel-inner {
+    padding: 6px 8px;
+  }
+
+  #command-dock .panel-title,
+  #command-dock .location-toolbar-label {
+    letter-spacing: 1px;
+  }
+}
