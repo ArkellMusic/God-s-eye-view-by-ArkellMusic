@@ -1,0 +1,118 @@
+{
+  "packs": [
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "file": "madrid/madrid.json",
+      "enabled": true
+    },
+    {
+      "id": "m30",
+      "name": "M-30",
+      "file": "m30/m30.json",
+      "enabled": true
+    },
+    {
+      "id": "comunidad-madrid",
+      "name": "Comunidad de Madrid",
+      "file": "comunidad-madrid/comunidad.json",
+      "enabled": true
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe",
+      "file": "municipios/getafe.json",
+      "enabled": true
+    },
+    {
+      "id": "pinto",
+      "name": "Pinto",
+      "file": "municipios/pinto.json",
+      "enabled": true
+    },
+    {
+      "id": "valdemoro",
+      "name": "Valdemoro",
+      "file": "municipios/valdemoro.json",
+      "enabled": true
+    },
+    {
+      "id": "leganes",
+      "name": "Leganés",
+      "file": "municipios/leganes.json",
+      "enabled": true
+    },
+    {
+      "id": "fuenlabrada",
+      "name": "Fuenlabrada",
+      "file": "municipios/fuenlabrada.json",
+      "enabled": true
+    },
+    {
+      "id": "parla",
+      "name": "Parla",
+      "file": "municipios/parla.json",
+      "enabled": true
+    },
+    {
+      "id": "mostoles",
+      "name": "Móstoles",
+      "file": "municipios/mostoles.json",
+      "enabled": true
+    },
+    {
+      "id": "alcorcon",
+      "name": "Alcorcón",
+      "file": "municipios/alcorcon.json",
+      "enabled": true
+    },
+    {
+      "id": "alcala-de-henares",
+      "name": "Alcalá de Henares",
+      "file": "municipios/alcala-de-henares.json",
+      "enabled": true
+    },
+    {
+      "id": "toledo",
+      "name": "Toledo",
+      "file": "toledo/toledo.json",
+      "enabled": true
+    },
+    {
+      "id": "dgt",
+      "name": "DGT",
+      "file": "dgt/dgt.json",
+      "enabled": true
+    },
+    {
+      "id": "skyline",
+      "name": "Skyline",
+      "file": "live/skyline.json",
+      "enabled": true
+    },
+    {
+      "id": "otros-live",
+      "name": "Otros directos",
+      "file": "live/otros-live.json",
+      "enabled": true
+    },
+    {
+      "id": "vision-environnement-es",
+      "name": "Vision-Environnement España",
+      "file": "live/vision-environnement.json",
+      "enabled": true
+    },
+    {
+      "id": "espana-directos",
+      "name": "España - Directos meteo365/esquiades",
+      "file": "live/espana-directos.json",
+      "enabled": true
+    },
+    {
+      "id": "espana-youtube-live",
+      "name": "España - Directos YouTube (resueltos a .m3u8)",
+      "file": "live/espana-youtube-resuelto.json",
+      "enabled": true
+    }
+  ]
+}

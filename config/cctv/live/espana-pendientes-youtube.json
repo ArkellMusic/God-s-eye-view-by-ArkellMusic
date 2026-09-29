@@ -1,0 +1,173 @@
+{
+  "_nota": "Cámaras youtube_live de espana_actualizado.json. NO están registradas en index.json todavía: el proyecto no soporta reproducir directos de YouTube (watch/embed) como feedType hls sin extraer antes la URL .m3u8 real (ver yt-dlp).",
+  "camaras": [
+    {
+      "id": "malaga-airport",
+      "nombre": "Aeropuerto de Málaga - Costa del Sol (AGP), pista 12/30",
+      "ciudad": "Málaga",
+      "region": "Andalucía",
+      "coordenadas": {
+        "lat": 36.6767427,
+        "lon": -4.4938696
+      },
+      "proveedor": "meteo365.es (canal YouTube meteo365es)",
+      "url_youtube": "https://www.youtube.com/watch?v=A6R81wOlQqs",
+      "pagina_origen": "https://meteo365.es/livecams/malaga-airport.php",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "ceuta-puerto",
+      "nombre": "Puerto de Ceuta y Estrecho de Gibraltar",
+      "ciudad": "Ceuta",
+      "region": "Ceuta",
+      "coordenadas": {
+        "lat": 35.8933898,
+        "lon": -5.3209486
+      },
+      "proveedor": "meteo365.es (canal YouTube meteo365es)",
+      "url_youtube": "https://www.youtube.com/watch?v=al9kIbbTaUg",
+      "pagina_origen": "https://meteo365.es/livecams/ceuta.php",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "maspalomas-dunas",
+      "nombre": "Dunas de Maspalomas, Faro y Meloneras",
+      "ciudad": "Maspalomas",
+      "region": "Canarias (Las Palmas)",
+      "coordenadas": {
+        "lat": 27.7351307,
+        "lon": -15.5989029
+      },
+      "proveedor": "Harry Hurtig",
+      "url_youtube": "https://www.youtube.com/embed/9EoWwXApQXk?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/725/live-cam-gran-canaria-maspalomas-dunes-faro-meloneras",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "tenerife-norte-airport",
+      "nombre": "Aeropuerto de Tenerife Norte, pista y calle de rodaje",
+      "ciudad": "San Cristóbal de La Laguna",
+      "region": "Canarias (Tenerife)",
+      "coordenadas": {
+        "lat": 28.4838073,
+        "lon": -16.3427673
+      },
+      "proveedor": "LanzaroteWebcam",
+      "url_youtube": "https://www.youtube.com/embed/yrx0fvj-4QI?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/474/live-tenerife-airport-north-runway-webcam",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "vigo-samil",
+      "nombre": "Playa de Samil y Ría de Vigo (180°)",
+      "ciudad": "Vigo",
+      "region": "Galicia",
+      "coordenadas": {
+        "lat": 42.2089827,
+        "lon": -8.7765163
+      },
+      "proveedor": "RiadeVigoCam.com",
+      "url_youtube": "https://www.youtube.com/embed/6wFjIFTyXTg?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/2697/ria-de-vigo-180-live-webcam-samil-beach-c-es-islands",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "laredo-salve",
+      "nombre": "Playa de Laredo (La Salvé)",
+      "ciudad": "Laredo",
+      "region": "Cantabria",
+      "coordenadas": {
+        "lat": 43.419661,
+        "lon": -3.4392503
+      },
+      "proveedor": "Wolkam IT / MeteoWeb",
+      "url_youtube": "https://www.youtube.com/embed/FCZCS7QCsls?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/586/laredo-beach-live-webcam-cantabria-spain",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "sant-elm-mallorca",
+      "nombre": "Playa de Sant Elm",
+      "ciudad": "Sant Elm (Andratx)",
+      "region": "Illes Balears",
+      "coordenadas": {
+        "lat": 39.580949,
+        "lon": 2.3508103
+      },
+      "proveedor": "Mallorca Webcam (multimediatres.com)",
+      "url_youtube": "https://www.youtube.com/embed/9svQ7gvPGc0?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/1114/sant-elm-beach-live-mallorca-4k",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "tossa-de-mar",
+      "nombre": "Playa y Castillo de Tossa de Mar (Vila Vella)",
+      "ciudad": "Tossa de Mar",
+      "region": "Catalunya (Girona)",
+      "coordenadas": {
+        "lat": 41.7223958,
+        "lon": 2.9301806
+      },
+      "proveedor": "Vayawebcam / Oficina de Turismo de Tossa de Mar",
+      "url_youtube": "https://www.youtube.com/embed/nWFcWooDAxI?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/2031/tossa-de-mar-beach-castle-live-webcam",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "altea-playa",
+      "nombre": "Playa de Altea",
+      "ciudad": "Altea",
+      "region": "Comunitat Valenciana (Alicante)",
+      "coordenadas": {
+        "lat": 38.6,
+        "lon": -0.05
+      },
+      "proveedor": "Camping Cap-Blanch",
+      "url_youtube": "https://www.youtube.com/embed/hvsK8Fvz4rE?autoplay=1&rel=0",
+      "pagina_origen": "https://seetheview.com/cam/816/playa-de-altea-beach-webcam",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "navacerrada-telegrafo",
+      "nombre": "Puerto de Navacerrada - El Telégrafo",
+      "ciudad": "Cercedilla",
+      "region": "Comunidad de Madrid",
+      "coordenadas": {
+        "lat": 40.7816,
+        "lon": -4.0076
+      },
+      "proveedor": "MeteoSierra",
+      "url_youtube": "https://www.youtube.com/watch?v=Av2fBEljQxM",
+      "pagina_origen": "https://www.infonieve.es/estacion-esqui/puerto-de-navacerrada/webcams/",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "madrid-gran-via-geowebcams",
+      "nombre": "Madrid - Gran Vía",
+      "ciudad": "Madrid",
+      "region": "Comunidad de Madrid",
+      "coordenadas": {
+        "lat": 40.4189,
+        "lon": -3.6969
+      },
+      "proveedor": "Cámaras de tráfico de Vigo / GeoWebcams",
+      "url_youtube": "https://www.youtube.com/watch?v=KmcLujr7PU0",
+      "pagina_origen": "https://www.geowebcams.com/es/webcam/camara-en-vivo-gran-via-madrid",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    },
+    {
+      "id": "guardamar-ayuntamiento",
+      "nombre": "Ayuntamiento de Guardamar del Segura (Plaza de la Constitución)",
+      "ciudad": "Guardamar del Segura",
+      "region": "Comunidad Valenciana (Alicante)",
+      "coordenadas": {
+        "lat": 38.08972,
+        "lon": -0.655
+      },
+      "proveedor": "YouTube Live",
+      "url_youtube": "https://www.youtube.com/watch?v=VM61M-y3WoA",
+      "pagina_origen": "https://www.youtube.com/watch?v=VM61M-y3WoA",
+      "nota": "Pendiente: requiere resolver el .m3u8 real con yt-dlp antes de poder usarse como feed hls en el proyecto."
+    }
+  ]
+}

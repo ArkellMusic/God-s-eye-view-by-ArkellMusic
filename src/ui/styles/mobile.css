@@ -1,0 +1,587 @@
+/* ── Móvil / pantallas táctiles ─────────────────────────────
+   Se carga la última para poder ajustar sin tocar el resto de hojas.
+   1) Comportamiento táctil general (sin zoom por doble toque, sin rebote).
+   2) Objetivos táctiles de ≥40px y campos de 16px (iOS no hace zoom al escribir).
+   3) Suelo de tamaño de letra: la interfaz usa muchos textos de 6–10px,
+      ilegibles en un móvil. Se suben a 10–12px solo en táctil ≤1024px.
+   El bloque 3 está generado a partir de las reglas existentes (excepto la
+   cabina, cockpit.css, que tiene su propio diseño). */
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@supports (height: 100dvh) {
+  html,
+  body {
+    height: 100dvh;
+  }
+
+  #cesiumContainer,
+  #loading-screen {
+    height: 100dvh;
+  }
+
+  #cockpit-cloud-effects {
+    height: 100dvh;
+  }
+}
+
+@media (pointer: coarse) {
+  button,
+  [role='button'],
+  summary,
+  select,
+  label {
+    touch-action: manipulation;
+  }
+
+  button:not(.cesium-button),
+  [role='button'],
+  select,
+  input:not([type='range']):not([type='checkbox']):not([type='radio']) {
+    min-height: 40px;
+  }
+
+  input:not([type='range']):not([type='checkbox']):not([type='radio']),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* Los sliders necesitan una zona de arrastre generosa. */
+  input[type='range'] {
+    min-height: 32px;
+    touch-action: pan-y;
+  }
+
+  /* Sin "hover": evita que los efectos de ratón se queden pegados al tocar. */
+  .style-btn:hover {
+    transform: none;
+  }
+}
+
+@media (pointer: coarse) and (max-width: 1024px) {
+  .bhote-embedded-callout footer strong {
+    font-size: 12px;
+  }
+
+  .bhote-embedded-callout footer small {
+    font-size: 11px;
+  }
+
+  .bhote-embedded-callout footer a {
+    font-size: 11px;
+  }
+
+  .bhote-event-kicker,
+  .bhote-event-section-head,
+  .bhote-event-status,
+  .bhote-event-evidence summary,
+  .bhote-event-report small {
+    font-size: 11px;
+  }
+
+  .bhote-event-dates {
+    font-size: 11px;
+  }
+
+  .bhote-event-story-current span,
+  .bhote-event-story-current small {
+    font-size: 11px;
+  }
+
+  .bhote-event-story-current strong {
+    font-size: 12px;
+  }
+
+  .bhote-event-actions button,
+  .bhote-event-report {
+    font-size: 11px;
+  }
+
+  .bhote-event-actions button {
+    font-size: 11px;
+  }
+
+  .bhote-event-credit {
+    font-size: 11px;
+  }
+
+  .bhote-event-caveat {
+    font-size: 11px;
+  }
+
+  .cctv-cal-value {
+    font-size: 11px;
+  }
+
+  .cctv-cal-input {
+    font-size: 11px;
+  }
+
+  #cctv-quality-chip {
+    font-size: 11px;
+  }
+
+  .cctv-frame-wrap.loading:not(.has-frame)::before {
+    font-size: 11px;
+  }
+
+  .cctv-expand-btn {
+    font-size: 11px;
+  }
+
+  #cctv-meta {
+    font-size: 11px;
+  }
+
+  #cctv-source-badge {
+    font-size: 11px;
+  }
+
+  .cctv-summary-label {
+    font-size: 11px;
+  }
+
+  #cctv-summary {
+    font-size: 11.5px;
+  }
+
+  .cctv-video-modal-title {
+    font-size: 12px;
+  }
+
+  .cctv-group-toggle {
+    font-size: 11.5px;
+  }
+
+  #command-dock .gev-voice-kicker {
+    font-size: 10px;
+  }
+
+  #command-dock .panel-title,
+  #command-dock .location-toolbar-label {
+    font-size: 11px;
+  }
+
+  #command-dock .btn-label {
+    font-size: 11px;
+  }
+
+  #command-dock .btn-key {
+    font-size: 10px;
+  }
+
+  #command-dock #location-search,
+  #command-dock #location-search.expanded {
+    font-size: 12px;
+  }
+
+  #command-dock .location-pill {
+    font-size: 11px;
+  }
+
+  .panel-mini-label {
+    font-size: 11px;
+  }
+
+  .panel-mini-value {
+    font-size: 11px;
+  }
+
+  .panel-drag-handle.compact {
+    font-size: 11px;
+  }
+
+  .panel-title {
+    font-size: 11px;
+  }
+
+  .btn-label {
+    font-size: 12px;
+  }
+
+  .btn-key {
+    font-size: 11px;
+  }
+
+  .loader-status {
+    font-size: 12px;
+  }
+
+  #pp-toggles .pp-header-label {
+    font-size: 11px;
+  }
+
+  .pp-label {
+    font-size: 11px;
+  }
+
+  .pp-slider-value {
+    font-size: 11px;
+  }
+
+  .gev-slider-value {
+    font-size: 11px;
+  }
+
+  .pp-slider-mini-label {
+    font-size: 11px;
+  }
+
+  .detection-allocation-seg .pp-mode-btn {
+    font-size: 11px;
+  }
+
+  .map-source-heading {
+    font-size: 11px;
+  }
+
+  .map-stack-chip {
+    font-size: 11px;
+  }
+
+  .map-stack-chip-req {
+    font-size: 10px;
+  }
+
+  .pp-stack-status {
+    font-size: 11px;
+  }
+
+  .pp-select {
+    font-size: 11.5px;
+  }
+
+  .pp-text-input {
+    font-size: 11.5px;
+  }
+
+  .draw-hint {
+    font-size: 11px;
+  }
+
+  .pp-mode-btn {
+    font-size: 11px;
+  }
+
+  #clean-view-exit {
+    font-size: 11.5px;
+  }
+
+  .param-panel-title {
+    font-size: 11px;
+  }
+
+  .param-label {
+    font-size: 11px;
+  }
+
+  .param-value {
+    font-size: 11.5px;
+  }
+
+  :root[data-ui-theme='cyber'] body.cockpit-mode .cockpit-roll-arc::before {
+    font-size: 10px;
+  }
+
+  :root[data-ui-theme='cyber'] body.cockpit-mode .cockpit-topline::after {
+    font-size: 10px;
+  }
+
+  :root[data-ui-theme='cyber'] body.cockpit-mode .cockpit-utility-launcher {
+    font-size: 11px;
+  }
+
+  :root[data-ui-theme='cyber'] body.cockpit-mode .cockpit-position-readout,
+  :root[data-ui-theme='cyber'] body.cockpit-mode .cockpit-help {
+    font-size: 11px;
+  }
+
+  #cesium-credits {
+    font-size: 11.5px;
+  }
+
+  #gev-voice-button {
+    font-size: 11.5px;
+  }
+
+  #gev-voice-status {
+    font-size: 11.5px;
+  }
+
+  #gev-voice-detail {
+    font-size: 11px;
+  }
+
+  #title-bar .subtitle {
+    font-size: 12px;
+  }
+
+  #title-bar .frame-rate-readout {
+    font-size: 12px;
+  }
+
+  #style-indicator .indicator-label {
+    font-size: 11.5px;
+  }
+
+  .data-layer-group-heading {
+    font-size: 11.5px;
+  }
+
+  #space-mission-panel-host .space-mission-roster-header strong {
+    font-size: 11px;
+  }
+
+  #space-mission-panel-host .space-mission-roster-header span {
+    font-size: 10px;
+  }
+
+  #space-mission-panel-host .space-mission-roster-header output {
+    font-size: 11px;
+  }
+
+  #space-mission-panel-host .space-mission-roster-copy strong {
+    font-size: 11px;
+  }
+
+  #space-mission-panel-host .space-mission-roster-copy small {
+    font-size: 10px;
+  }
+
+  #space-mission-panel .mission-data-table small {
+    font-size: 11px;
+  }
+
+  .mission-replay-overlay-callout strong {
+    font-size: 11.5px;
+  }
+
+  .context-radio-mini-heading strong {
+    font-size: 11px;
+  }
+
+  .context-mode-standby strong {
+    font-size: 11px;
+  }
+
+  .global-context-actions .panel-layer-toggle {
+    font-size: 11px;
+  }
+
+  #global-context-panel #cockpit-entry {
+    font-size: 11px;
+  }
+
+  .location-toolbar-label {
+    font-size: 11px;
+  }
+
+  .location-mini-city {
+    font-size: 11px;
+  }
+
+  .location-mini-poi {
+    font-size: 11px;
+  }
+
+  .location-pill {
+    font-size: 12px;
+  }
+
+  .poi-pill-name {
+    font-size: 11.5px;
+  }
+
+  .poi-pill-key {
+    font-size: 11px;
+  }
+
+  #orbit-indicator {
+    font-size: 11.5px;
+  }
+
+  .hud-top-bar,
+  .hud-bottom-bar {
+    font-size: 11.5px;
+  }
+
+  .hud-summary-label {
+    font-size: 11px;
+  }
+
+  .hud-summary {
+    font-size: 12px;
+  }
+
+  .hud-edge {
+    font-size: 11.5px;
+  }
+
+  .military-awareness-note {
+    font-size: 11.5px;
+  }
+
+  .military-awareness-standby strong {
+    font-size: 11.5px;
+  }
+
+  .military-awareness-standby span {
+    font-size: 11px;
+  }
+
+  .military-awareness-compass-heading {
+    font-size: 11px;
+  }
+
+  .data-count {
+    font-size: 12px;
+  }
+
+  .data-toggle-btn {
+    font-size: 11px;
+  }
+
+  .data-toggle-meta {
+    font-size: 11px;
+  }
+
+  .data-toggle-chip {
+    font-size: 11px;
+  }
+
+  .data-toggle-legend-item {
+    font-size: 11px;
+  }
+
+  .data-row-list-item {
+    font-size: 11px;
+  }
+
+  .data-toggle-controls-info {
+    font-size: 11px;
+  }
+
+  #recent-imagery-panel.collapsed .panel-title {
+    font-size: 11px;
+  }
+
+  .recent-imagery-readout .ri-zoom-in {
+    font-size: 11px;
+  }
+
+  .recent-imagery-readout .ri-thumb-text {
+    font-size: 11px;
+  }
+
+  .recent-imagery-readout .ri-card-flag,
+  .recent-imagery-readout .ri-card-start {
+    font-size: 10px;
+  }
+
+  .recent-imagery-readout .ri-card-date {
+    font-size: 11.5px;
+  }
+
+  .recent-imagery-readout .ri-card-sensor,
+  .recent-imagery-readout .ri-card-cloud {
+    font-size: 11px;
+  }
+
+  .recent-imagery-readout .ri-slot-tag {
+    font-size: 11px;
+  }
+
+  .recent-imagery-readout .ri-opacity-label {
+    font-size: 11px;
+  }
+
+  .recent-imagery-readout .ri-details .rail-card-title {
+    font-size: 11px;
+  }
+
+  .hud-top-bar {
+    font-size: 11px;
+  }
+
+  .hud-bottom-bar {
+    font-size: 11px;
+  }
+
+  .scene-btn {
+    font-size: 11px;
+  }
+
+  .scene-shot-empty {
+    font-size: 11px;
+  }
+
+  .scene-shot-label {
+    font-size: 11.5px;
+  }
+
+  .scene-shot-meta {
+    font-size: 11px;
+  }
+
+  .scene-shot-btn {
+    font-size: 11px;
+  }
+
+  #scene-progress-fill {
+    font-size: 11px;
+  }
+
+  #scene-status {
+    font-size: 11.5px;
+  }
+
+  #scene-runtime {
+    font-size: 12px;
+  }
+
+  #data-panel.collapsed .panel-title,
+  #cctv-panel.collapsed .panel-title,
+  #radio-panel.collapsed .panel-title,
+  #scene-panel.collapsed .panel-title {
+    font-size: 11px;
+  }
+
+  .camera-compass-n {
+    font-size: 11px;
+  }
+
+  #global-loading-status {
+    font-size: 11px;
+  }
+
+  #traffic-sync-chip,
+  #cctv-sync-chip {
+    font-size: 11px;
+  }
+
+  #toast {
+    font-size: 12px;
+  }
+
+  #weather-panel.collapsed .panel-title {
+    font-size: 11px;
+  }
+
+  .rail-card-badge,
+  .rail-card-line,
+  .rail-timeline-readout {
+    font-size: 11px;
+  }
+
+  .rail-card .data-row-list-item {
+    font-size: 11px;
+  }
+}

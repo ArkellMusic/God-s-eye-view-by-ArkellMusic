@@ -1,0 +1,2744 @@
+{
+  "_readme": {
+    "descripcion": "Listado de cámaras en directo de España. Cada cámara con provider='ipcamlive' usa un alias estable; el .m3u8 real se resuelve en el momento de reproducir con resolver_ipcamlive.js. Las cámaras con provider='desconocido' no usan IPCamLive y necesitan investigarse aparte (YouTube, players con token, etc.).",
+    "fuente": "vision-environnement.com"
+  },
+  "camaras": [
+    {
+      "nombre": "Aisa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/aisa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Albaida",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/albaida/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Albarracin",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "627a44d05636f",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/albarracin/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Albentosa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/albentosa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alboraya",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/alboraya/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alcala de la selva castillo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/alcala-de-la-selva-castillo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alcala de la selva golf el castillejo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/alcala-de-la-selva-golf-el-castillejo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alcala de la selva hotel villa maria",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/alcala-de-la-selva-hotel-villa-maria/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alcossebre",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/alcossebre/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Museu sa bassa blanca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/museu-sa-bassa-blanca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alcudia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/alcudia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alfabia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/alfabia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puig de randa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/puig-de-randa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Aliaga",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/aliaga/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alicante",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/alicante/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Altea",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/altea/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alto campoo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/alto-campoo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alto campoo 1850",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/alto-campoo-1850/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Alto campoo 2175",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/alto-campoo-2175/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Delta ebre chouette effraie 1",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/delta-ebre-chouette-effraie-1/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Delta ebre chouette effraie 2",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/delta-ebre-chouette-effraie-2/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Delta ebre riet vell lagune 1",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/delta-ebre-riet-vell-lagune-1/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Delta ebre riet vell lagune 2",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/delta-ebre-riet-vell-lagune-2/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Andratx weather",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/andratx-weather/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Arcos de las salinas eglise",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/arcos-de-las-salinas-eglise/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Arenys",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/arenys/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Arinaga",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/arinaga/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Arrecife",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/arrecife/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Ace lanzarote airport",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/ace-lanzarote-airport/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Colonia de sant pere",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/colonia-de-sant-pere/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Betlem",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/betlem/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Arta",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/arta/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puig de sa tudossa arta",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/puig-de-sa-tudossa-arta/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Aviles centro niemeyer",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/aviles-centro-niemeyer/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Aviles ria de aviles centro niemeyer",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/aviles-ria-de-aviles-centro-niemeyer/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Barcelona baix guinardo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/barcelona-baix-guinardo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Barcelone2",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "sagradafamilia",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/barcelone2/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Benasque",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/benasque/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Benicassim2",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/benicassim2/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Benidorm",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/benidorm/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Benidorm3",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/benidorm3/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Benissa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/benissa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Berga",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "bergaresort",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/berga/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Abba bilbao",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/abba-bilbao/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Bocairent",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/bocairent/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Borriana",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/borriana/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Braojos de la sierra braojos de la sierra ii",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-de-madrid/braojos-de-la-sierra-braojos-de-la-sierra-ii/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Bulnes bulnes de arriba el castillo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/bulnes-bulnes-de-arriba-el-castillo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Bunyola",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/bunyola/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Burela playa de portelo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/burela-playa-de-portelo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Burela playa de a marosa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/burela-playa-de-a-marosa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba burgos",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/abba-burgos/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Burgos cathedrale",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/burgos-cathedrale/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San lorenzo gijon",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/san-lorenzo-gijon/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cabra de mora panoramique",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/cabra-de-mora-panoramique/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cabrera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cabrera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cabrera aigle pecheur",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cabrera-aigle-pecheur/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Caceres",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/estremadure/caceres/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cadaques",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "5bb1caf60e5e8",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/cadaques/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Cadiz4",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/cadiz4/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cala santanyi 15115",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cala-santanyi-15115/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torret",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/torret/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cala vinyes three fingers bay",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cala-vinyes-three-fingers-bay/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Bosh",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/bosh/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Calar alto",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/calar-alto/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Caldera de taburiente",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/caldera-de-taburiente/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Palafrugell",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/palafrugell/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Calella de palafrugell finques frigola calella de palafrugell",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/calella-de-palafrugell-finques-frigola-calella-de-palafrugell/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Calpe club nautico",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/calpe-club-nautico/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Calpe playa arenal bol",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/calpe-playa-arenal-bol/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Calpe",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/calpe/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "El toro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/el-toro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "El toro calvia 1",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/el-toro-calvia-1/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Illa del toro submarina",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/illa-del-toro-submarina/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Camaleno redo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/camaleno-redo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cambrils hafen",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/cambrils-hafen/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Camp de mar golf andratx",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/camp-de-mar-golf-andratx/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Camp de mar playa roca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/camp-de-mar-playa-roca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Canada vellida",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/canada-vellida/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Font de sa cala",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/font-de-sa-cala/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Capdepera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/capdepera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Caravia playa de la espasa ii",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/caravia-playa-de-la-espasa-ii/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Caravia playa de les teyes arenal de moris",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/caravia-playa-de-les-teyes-arenal-de-moris/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Carmenes carmenes",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/carmenes-carmenes/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Castelldefels",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/castelldefels/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Castelldefels2",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/castelldefels2/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Castrillon",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/castrillon/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Celanova",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/celanova/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cerler ampriu",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/cerler-ampriu/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cerler restaurante el bosque",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/cerler-restaurante-el-bosque/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Chiclana de la frontera",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "6a293297ad864",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/chiclana-de-la-frontera/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Chulilla apartamentos la muela",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/chulilla-apartamentos-la-muela/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Chulilla la muela",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/chulilla-la-muela/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Ciruelos del pinar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/ciruelos-del-pinar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cala morell",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cala-morell/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cobreces playa de luana",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/cobreces-playa-de-luana/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cocentaina",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/cocentaina/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Colunga playa de la griega ii",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/colunga-playa-de-la-griega-ii/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba comillas",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/abba-comillas/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cudillero cudillero",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/cudillero-cudillero/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cudillero playa de san pedro de la ribera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/cudillero-playa-de-san-pedro-de-la-ribera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cullera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/cullera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Daimiel tablas",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/daimiel-tablas/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Denia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/denia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Ses figueretes",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/ses-figueretes/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Astillero marismas negras",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/astillero-marismas-negras/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Elcampelo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/elcampelo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "El castellar ayuntamiento",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/el-castellar-ayuntamiento/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "El pobo mirador hoyalta",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/el-pobo-mirador-hoyalta/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "El prat",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/el-prat/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "El toro port adriano",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/el-toro-port-adriano/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Elx",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/elx/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Es calo es calo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/es-calo-es-calo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Es castell",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/es-castell/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cala tirant",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cala-tirant/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Monte toro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/monte-toro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Estepona",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/estepona/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Estriegana",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/estriegana/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Famara beach lanzarote lanzarote live at famara beach",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/famara-beach-lanzarote-lanzarote-live-at-famara-beach/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Famorca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/famorca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "S horta",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/s-horta/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sant salvador felanitx",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/sant-salvador-felanitx/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Fisterra playa langosteira",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/fisterra-playa-langosteira/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Fisterra puerto de finisterre",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/fisterra-puerto-de-finisterre/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Forcal",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/forcal/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "La mola",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/la-mola/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "La savina",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/la-savina/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Formiche alto eglise",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/formiche-alto-eglise/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Fornells de la selva",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/fornells-de-la-selva/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Fortanete",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/fortanete/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Foz playa de a rapadoira",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/foz-playa-de-a-rapadoira/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Frias",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/frias/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Fuengirola",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/fuengirola/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Elmatorral",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/elmatorral/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gandia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/gandia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gandia playa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/gandia-playa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Girona",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/girona/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba gijon",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/abba-gijon/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gijon",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/gijon/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gijon port asturies espagne",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/gijon-port-asturies-espagne/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gipuzkoa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/gipuzkoa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gozon playa de xago ii",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/gozon-playa-de-xago-ii/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Grao de castellon",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/grao-de-castellon/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Grenade",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/grenade/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gds",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/gds/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Gudar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/gudar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Hermandad de campoo de suso",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/hermandad-de-campoo-de-suso/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Hoyalta",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/hoyalta/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Huerta de arriba",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/huerta-de-arriba/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba huesca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/abba-huesca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santa magdalena",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/santa-magdalena/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Jaca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/jaca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Jaca panoramica de jaca gothombi",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/jaca-panoramica-de-jaca-gothombi/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Jerez vencejo palido",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/jerez-vencejo-palido/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Jerica",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/jerica/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "L alfas del pi",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/l-alfas-del-pi/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "L ametlla de mar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/l-ametlla-de-mar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Lametlla del mar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/lametlla-del-mar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Garita",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "5bb1e2f9de73e",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/garita/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Lvj",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/lvj/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Laredo playa de salve",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/laredo-playa-de-salve/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Laspalmas",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/laspalmas/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Lastres muelle de lastres",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/lastres-muelle-de-lastres/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Leira",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "pedradosal",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/leira/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Lekeitio",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/lekeitio/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Lerate",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "67dab3584e49a",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/navarre/lerate/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Llanes mirador playa de toro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/llanes-mirador-playa-de-toro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Llanes playa de barro i",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/llanes-playa-de-barro-i/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Lliria",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/lliria/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Lloret de mar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/lloret-de-mar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cap blanc",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cap-blanc/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Los alcazares mar menor",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/region-de-murcie/los-alcazares-mar-menor/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Luarca panoramique",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/luarca-panoramique/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Luzaga",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/luzaga/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Madrid",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-de-madrid/madrid/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Magaluf punta ballena",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/magaluf-punta-ballena/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Malaga",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/malaga/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Nueva malaga malaga",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalusia/nueva-malaga-malaga/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Manacor",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/manacor/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "S illot",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/s-illot/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Mancor",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/mancor/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Mao",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/mao/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sa mesquida",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/sa-mesquida/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Marbella",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "6270ce6332ec0",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/marbella/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Maspalomas",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/maspalomas/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Almonte",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "5486d66dd1257",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/almonte/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Mastalascanas",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "5486d66dd1257",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/mastalascanas/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Mastalascanas2",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "64771c293ebbb",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/mastalascanas2/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Zunegas3",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/zunegas3/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Miravete de la sierra vallee guadalope",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/miravete-de-la-sierra-vallee-guadalope/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Molletdelvalles",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/molletdelvalles/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Montanamina",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/montanamina/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Toro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/toro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Monteagudo del castillo ayuntamiento",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/monteagudo-del-castillo-ayuntamiento/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Mora de rubielos panoramique",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/mora-de-rubielos-panoramique/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Morella",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/morella/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Murias de paredes murias de paredes",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/murias-de-paredes-murias-de-paredes/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Muros puerto de muros ii hotel do porto",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/muros-puerto-de-muros-ii-hotel-do-porto/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Navia playa de navia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/navia-playa-de-navia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Oliva",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/oliva/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Orihuela",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/region-de-murcie/orihuela/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Orihuela del tremedal",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/orihuela-del-tremedal/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Ortiguera puerto de ortiguera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/ortiguera-puerto-de-ortiguera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Oseja de sajambre oseja de sajambre i",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/oseja-de-sajambre-oseja-de-sajambre-i/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Oviedo vue depuis le naranco",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/oviedo-vue-depuis-le-naranco/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Padilla de abajo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/padilla-de-abajo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera cala fornells",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera-cala-fornells/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera cala fornells weather",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera-cala-fornells-weather/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera playa 5",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera-playa-5/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera playa palmira",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera-playa-palmira/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera tora beach",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera-tora-beach/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Paguera tora mar y mar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/paguera-tora-mar-y-mar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pajares valgrande billetteries",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/pajares-valgrande-billetteries/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pajares valgrande panoramique motorisee",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/pajares-valgrande-panoramique-motorisee/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pajares valgrande valle del sol 1800 m",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/pajares-valgrande-valle-del-sol-1800-m/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pajares valgrande zone basse",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/pajares-valgrande-zone-basse/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Palamos",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/palamos/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Palma mallorca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/palma-mallorca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Mallorca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/mallorca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Palmademallorca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/palmademallorca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Palmanova son maties",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/palmanova-son-maties/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pancrudo ayuntamiento",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/pancrudo-ayuntamiento/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Panticosa zona petrosos",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/panticosa-zona-petrosos/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Peniscola",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "629db8e5cfbd0",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/peniscola/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Pilar de la horadada",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/pilar-de-la-horadada/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Piles",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/piles/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pineda de la sierra",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/pineda-de-la-sierra/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Platjadaro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/platjadaro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Playa del ingles",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/playa-del-ingles/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pollenca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/pollenca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pollenca2",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/pollenca2/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Port de pollenca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/port-de-pollenca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Port de pollenca playa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/port-de-pollenca-playa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puig de maria pollenca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/puig-de-maria-pollenca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cala sant vicenc",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cala-sant-vicenc/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "La mola pollenca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/la-mola-pollenca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Poncebos ruta del cares",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/poncebos-ruta-del-cares/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Club nautic mig segre camp slalom ponts",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/club-nautic-mig-segre-camp-slalom-ponts/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Port andratx cala llamp",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/port-andratx-cala-llamp/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Port andratx harbor",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/port-andratx-harbor/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Port andratx la mola",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/port-andratx-la-mola/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Pozo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/pozo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puertodelcarmen",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/puertodelcarmen/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puertomingalvo hotel mas de cebrian",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/puertomingalvo-hotel-mas-de-cebrian/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puertomingalvo hotel mas de cebrian ciel",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/puertomingalvo-hotel-mas-de-cebrian-ciel/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Rabanera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/rabanera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Randa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/randa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Avista baleares 1",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/avista-baleares-1/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Requena",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/requena/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Ribadesella pont et port de plaisance",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/ribadesella-pont-et-port-de-plaisance/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Ribadesella santa marina barra de ribadesella",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/ribadesella-santa-marina-barra-de-ribadesella/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Riello salce",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/riello-salce/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Roquetas de mar playa de la urbanizacion",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/roquetas-de-mar-playa-de-la-urbanizacion/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Roses",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/roses/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santiago de compostela plaza del obradoiro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/santiago-de-compostela-plaza-del-obradoiro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Compostelle",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/compostelle/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba san sebastian",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/abba-san-sebastian/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba salamanque",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/abba-salamanque/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Salinas",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/salinas/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Salobrena",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/salobrena/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Salou",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/salou/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San agustin calle mayor",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/san-agustin-calle-mayor/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San bartolome",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/san-bartolome/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sanisidro",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/sanisidro/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San sebastian la concha",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/san-sebastian-la-concha/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San sebastian ondarreta",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/san-sebastian-ondarreta/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San vicente de la barquera playa de oyambre pajaro amarillo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/san-vicente-de-la-barquera-playa-de-oyambre-pajaro-amarillo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sant antoni de pyortmany",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/sant-antoni-de-pyortmany/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sant elm sa dragonera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/sant-elm-sa-dragonera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Puig de sa talaia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/puig-de-sa-talaia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "San josep",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/san-josep/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Punta prima",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/punta-prima/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Cala torret",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/cala-torret/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santacruz2",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/santacruz2/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santa eularia des riu",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/santa-eularia-des-riu/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santapola",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/santapola/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santa ponsa beach",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/santa-ponsa-beach/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santa ponsa costa de la calma",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/santa-ponsa-costa-de-la-calma/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santander",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/santander/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santander petit duc",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/santander-petit-duc/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba santander",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/cantabrie/abba-santander/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Santo domingo de silos",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/santo-domingo-de-silos/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sdds",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/sdds/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sanxenxo playa de silgar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/sanxenxo-playa-de-silgar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sarrion ayuntamiento",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/sarrion-ayuntamiento/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Serra del cadi refuge prat daguilo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/serra-del-cadi-refuge-prat-daguilo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Colonia sant jordi",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/colonia-sant-jordi/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Abba seville",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/abba-seville/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Siero real club de golf la barganiza",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/siero-real-club-de-golf-la-barganiza/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sierra nevada mirlo blanco",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/sierra-nevada-mirlo-blanco/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sierra nevada zona borreguiles",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/sierra-nevada-zona-borreguiles/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sierra nevada zona montebajo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/sierra-nevada-zona-montebajo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Platja alconasser soller",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-baleares/platja-alconasser-soller/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Sopelo",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "673c8a5893eaf",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/sopelo/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Sotres sotres ii",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/sotres-sotres-ii/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Stiges",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "65d33d2760353",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/stiges/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Taiavera",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/taiavera/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Tamariu",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/tamariu/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Tamariu finques frigola tamariu",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/tamariu-finques-frigola-tamariu/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Taramundi taramundi",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/taramundi-taramundi/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Tartanedo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-la-manche/tartanedo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Tejeda",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "tejedawebcam",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/tejeda/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Tias",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/iles-canaries/tias/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torreblanca",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/torreblanca/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torredambarra2",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "porttorre",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/torredambarra2/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Torredembarra",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "62a9c21dba682",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/torredembarra/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Torreviaja playa de la mata",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/torreviaja-playa-de-la-mata/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torrevieja",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/torrevieja/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torrevieja playa de los locos",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/torrevieja-playa-de-los-locos/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torrevieja playa del cura",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/torrevieja-playa-del-cura/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Torrijas corazon de javalambre",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/torrijas-corazon-de-javalambre/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Tossa de mar",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/tossa-de-mar/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Grand hotel reymar tossa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/grand-hotel-reymar-tossa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Tui",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/tui/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Urdaibai",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/urdaibai/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Valdelinares",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/aragon/valdelinares/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Valdetorres",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "patio",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/estremadure/valdetorres/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Valdovino",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "pantin",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/valdovino/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Valence3",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/valence3/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Valencia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/valencia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Valencia plaza del ayuntamiento",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/valencia-plaza-del-ayuntamiento/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Vall de bianya",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "cvbianya",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/vall-de-bianya/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Vall de boi pla de vaques",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/vall-de-boi-pla-de-vaques/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Vega de tirados banos de ledesma rio tormes",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/vega-de-tirados-banos-de-ledesma-rio-tormes/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Velez malaga",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "5b25859df0b67",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/andalousie/velez-malaga/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Vidosa desfiladero de los beyos",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/vidosa-desfiladero-de-los-beyos/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Vigo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/vigo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Vigo coruxo playa de o vao toralla",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/galice/vigo-coruxo-playa-de-o-vao-toralla/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Vilada",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "vilada",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/vilada/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Vilanova",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/vilanova/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Platja cnvm",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/catalogne/platja-cnvm/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Villablina",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "plazasierrapambleyvillablino",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/villablina/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Villahermosa del rio",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/villahermosa-del-rio/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Villanueva santo adriano",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/asturies/villanueva-santo-adriano/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Villapadierna",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/castille-et-leon/villapadierna/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Vinaros",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/vinaros/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Xabia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/xabia/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Xalo",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/region-de-murcie/xalo/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Xativa",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/xativa/",
+      "estado": "pendiente_investigar"
+    },
+    {
+      "nombre": "Xeraco",
+      "region": "espana",
+      "provider": "ipcamlive",
+      "alias": "645b5e0857e41",
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/communaute-valencienne/xeraco/",
+      "estado": "confirmado"
+    },
+    {
+      "nombre": "Zumaia",
+      "region": "espana",
+      "provider": "desconocido",
+      "alias": null,
+      "fuente_original": "https://www.vision-environnement.com/es/webcam/espana/pays-basque/zumaia/",
+      "estado": "pendiente_investigar"
+    }
+  ]
+}

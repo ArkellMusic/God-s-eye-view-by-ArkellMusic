@@ -1,0 +1,6 @@
+1 ABRIR TERMINAL EN LA CARPETA RAIZ
+2 Instala las dependencias ejecuta 'npm install'
+3 Y EJECTURAR npm run dev
+4 LOCAL HOST INICIAR EN GOOGLE 
+5 SI DA ERROR ESCRIBIR EN TERMINAL dir 
+6 AÑADIR A TERMINAL DESPUES cd .\gods-eye-view-main
